@@ -1,0 +1,71 @@
+# Environment & Secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.cert
+*.crt
+*.p12
+*.pfx
+id_rsa*
+
+# Local databases (contain user password hashes, session states)
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+
+# Regenerable caches & Python artifacts
+cache/
+cache_*/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+.cache/
+*.cache
+
+# Environments
+.venv/
+venv/
+ENV/
+env/
+
+# Data files, external datasets, and research exports
+data/
+data_*/
+scratch/
+*.csv
+*.parquet
+*.feather
+*.zip
+*.tar*
+*.gz
+*.pkl
+*.h5
+SP500-Survivorship-bias-data-*/
+
+# Research and experiment outputs
+*_results.json
+audit_existing_backtest/
+fixed_backtest/
+isolated_backtest/
+factor_research_engine.py
+qqq_capture_engine.py
+run_final_long_only_comparison.py
+valeur_replication_engine.py
+
+# Logs and system runtime outputs
+*.log
+logs/
+.system_generated/
+qa_reports/
+
+# Operating system and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

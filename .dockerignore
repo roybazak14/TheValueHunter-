@@ -1,0 +1,29 @@
+# Secrets — inject via platform environment variables instead
+.env
+.env.*
+
+# Local databases — the container creates a fresh DB in $VH_DATA_DIR (use a persistent volume)
+*.db
+*.db-journal
+*.sqlite3
+
+# Large / regenerable local data (backtest price caches)
+cache/
+data/
+
+# Python / tooling artifacts
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.vscode/
+.idea/
+.git/
+.gitignore
+
+# Deployment files not needed inside the image
+Dockerfile
+.dockerignore
+
